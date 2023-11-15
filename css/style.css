@@ -1,0 +1,84 @@
+/*
+File: style.css
+Created: 11/14/2023
+GUI Assignment: Interactive Dynamic Table
+    My website consists of:
+    - a dynamic multiplication table that changes based off input 
+    - takes in numbers from -50 to 50
+    - organized in a clean and consistent way
+
+Sources: 
+    https://stackoverflow.com/questions/64134943/how-to-get-value-from-an-input-field-in-javascript?rq=3
+    https://stackoverflow.com/questions/28695617/how-to-get-a-number-value-from-an-input-field
+    https://www.youtube.com/watch?v=5Oq6Eqy7Y_A
+    https://www.w3schools.com/html/html_tables.asp
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_table_center
+    https://www.w3schools.com/tags/tag_fieldset.asp
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sticky_element
+    https://www.w3schools.com/howto/howto_css_sticky_element.asp
+
+Copyright (c) 2023 by ThienTran. All rights reserved. 
+May be freely copied/excerpted for educational purposes 
+with credit to the author.
+
+Updated by TL on 11/15/2023
+*/
+
+body {
+    background-color: cornsilk;
+}
+
+h1, p {
+    text-align: center;
+}
+
+fieldset {
+    background-color: white;
+}
+
+legend {
+    background-color: bisque;
+    border: 1px solid black; 
+    padding: 5px 10px; 
+}
+
+table, th, td{
+    border:1px solid black;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto auto;
+    width: 30%;
+    background-color: white;
+} 
+
+th { 
+    background-color: bisque;
+}
+
+td {
+    height: 30px;
+}
+
+tbody th:nth-child(1) {
+    background-color: bisque;
+    position: sticky;
+    left: 0; 
+}
+
+tbody tr:nth-child(1) {
+    background-color: bisque;
+    position: sticky;
+    top: 0; 
+}
+
+td:hover {
+    background-color: goldenrod;
+}
+
+#myTable {
+    overflow: scroll;
+    margin: auto auto;
+}
